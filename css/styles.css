@@ -1,0 +1,123 @@
+:root{
+    --primary-text-color:#424551;
+    --secondary-text-color:#1E212C;
+    --white-text-color: #ffffff;
+    --text-accent-color:#F75E05;
+    --bg-accent-color-alfa: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+    --bg-accent-color:linear-gradient(55.95deg, rgb(255, 63, 58) 0%, rgb(247, 94, 5) 100%);
+    --transition-dur-and-func:250ms cubic-bezier(.53, .72, 1, 1);
+}
+
+
+/* ===========================RESET STYLES=========================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* ===========================/RESET STYLES=========================== */
+
+/* ===========================BASIC STYLES=========================== */
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: var(--primary-text-color);
+    background-image: var(--bg-accent-color-alfa);
+    font-size: 16px;
+    line-height: 1.6;
+}
+.current{
+    color: var(--text-accent-color);
+}
+.container{
+    width: 1260px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.middle-button{
+    width: 210px;
+    padding: 15px 40px;
+}
+.icon{
+    fill: #424551;
+}
+/* ===========================/BASIC STYLES=========================== */
+
+/* ===========================HEADER STYLES=========================== */
+.header-container{
+    margin-top: 15px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-link:nth-of-type(1){
+    line-height: 0;
+    margin-right: 20px;
+}
+.consultation-btn{
+    background-image: var(--bg-accent-color);
+    border-radius: 4px;
+    color: var(--white-text-color);
+    border: 1px solid transparent;
+    scale: 1;
+    transition: color var(--transition-dur-and-func), border-color var(--transition-dur-and-func), background-image var(--transition-dur-and-func), scale var(--transition-dur-and-func);
+}
+.consultation-btn:hover,
+.consultation-btn:focus {
+    border-color: var(--text-accent-color);
+    background-image: var(--white-text-color);
+    color: var(--text-accent-color);
+    scale: 1.05;
+}
+.left-side-header{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.right-side-header{
+    display: flex;
+    gap: 5px;
+}
+.modal-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 180px;
+    background: none;
+    padding: 13px 0;
+
+}
+.text-register{
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* ===========================/HEADER STYLES=========================== */
