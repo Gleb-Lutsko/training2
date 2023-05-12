@@ -480,3 +480,142 @@ body{
     color: #FF4242;
 }
 /* ===========================/COURSES STYLES=========================== */
+
+/* ===========================FOOTER STYLES=========================== */
+.footer{
+    background-color: var(--secondary-text-color);
+    padding-top: 80px;
+}
+.main-footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.footer .logo{
+    margin-bottom: 24px;
+}
+.footer-text{
+    max-width: 279px;
+    margin-bottom: 38px;
+    opacity: 0.6;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--white-text-color);
+}
+.footer-social-list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer-social-item{
+    height: 24px;
+}
+.footer-social-icon{
+    fill: var(--white-text-color);
+    opacity: 0.6;
+}
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon{
+    opacity: 1;
+}
+.footer-form-subtitle{
+    max-width: 286px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.5;
+    color: var(--white-text-color);
+}
+.footer-title{
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+}
+.footer-sitemap-list, .footer-courses-list, .footer-contacts-list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    opacity: 0.6;
+}
+.footer-sitemap-link, .footer-courses-link, .footer-contacts-link{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--white-text-color);
+}
+.footer-contacts-link{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.footer-contacts-icon{
+    fill: var(--white-text-color);
+    opacity: 0.6;
+}
+.footer-form-title{
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: var(--white-text-color);
+}
+.footer-form{
+    position: relative;
+    margin-bottom: 12px;
+}
+.form-input{
+    width: 286px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding-left: 12px;
+    line-height: 1.5;
+    color: var(--white-text-color);
+    opacity: 0.6;
+}
+.form-input::placeholder{
+    line-height: 1.5;
+    color: var(--white-text-color);
+    opacity: 0.6;
+}
+.form-submit-btn{
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background-color: transparent;
+}
+.footer-form-submit-icon{
+    fill: var(--white-text-color);
+}
+.footer-bottom-wrapper{
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.footer-bottom-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-copyright{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--white-text-color)
+}
+.footer-copy-icon{
+    fill: #FF3F3A;
+}
+.footer-anchor{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--white-text-color);
+    opacity: 0.6;
+}
+/* ===========================/FOOTER STYLES=========================== */
