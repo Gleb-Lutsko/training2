@@ -16,6 +16,12 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/logo/favicon-32x32.png"
+    />
   </head>
   <body>
     <!-- header -->
@@ -44,11 +50,11 @@
             <button type="button" class="btn consultation-btn button-fill">
               Get consultation
             </button>
-            <button type="button" class="btn modal-btn">
-              <svg class="icon" width="20" height="20">
+            <button type="button" class="btn modal-btn" data-modal-open>
+              <svg class="modal-open-icon icon" width="20" height="20">
                 <use href="./images/icon/symbol-defs.svg#profile"></use>
               </svg>
-              <span class="text-register">Log in / Register</span>
+              Log in / Register
             </button>
           </div>
         </nav>
@@ -452,5 +458,88 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="backdrop" data-modal>
+      <div class="modal-window">
+        <button type="button" class="modal-close-btn btn" data-modal-close>
+          <svg class="modal-close-icon" width="24" height="24">
+            <use href="./images/icon/symbol-defs.svg#cross"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">Sign in</h2>
+        <p class="modal-subtitle">
+          Sign in to your account using email and password provided during
+          registration.
+        </p>
+        <form class="modal-form">
+          <label class="modal-label"
+            >Email<input
+              class="modal-input"
+              type="email"
+              name="user-email"
+              placeholder="Your working email"
+          /></label>
+          <label class="modal-label"
+            >Password<input
+              class="modal-input"
+              type="password"
+              name="user-password"
+              placeholder="Your working password"
+          /></label>
+          <div class="modal-checkbox-wrapper">
+            <label class="modal-checkbox-label"
+              ><input
+                class="modal-checkbox"
+                type="checkbox"
+                name="autologin"
+                value="yes"
+              />Keep me signed in</label
+            >
+            <a class="modal-forgot-link" href="#">Forgot password?</a>
+          </div>
+          <button class="modal-submit-btn btn" type="submit">Sign in</button>
+          <p class="modal-registration-text">
+            Don't have an account?
+            <a href="#" class="modal-registration-link">Sign up</a>
+          </p>
+        </form>
+
+        <div class="modal-bottom-wrapper">
+          <p class="modal-bottom-subtitle">Or sign in with</p>
+          <ul class="modal-bottom-social-list">
+            <li class="modal-bottom-social-item">
+              <a href="" class="modal-bottom-social-link"
+                ><svg class="modal-botton-social-icon" width="20" height="20">
+                  <use href="./images/icon/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal-bottom-social-item">
+              <a href="" class="modal-bottom-social-link"
+                ><svg class="modal-botton-social-icon" width="20" height="20">
+                  <use href="./images/icon/symbol-defs.svg#google"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal-bottom-social-item">
+              <a href="" class="modal-bottom-social-link"
+                ><svg class="modal-botton-social-icon" width="20" height="20">
+                  <use href="./images/icon/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="modal-bottom-social-item">
+              <a href="" class="modal-bottom-social-link"
+                ><svg class="modal-botton-social-icon" width="20" height="20">
+                  <use href="./images/icon/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
