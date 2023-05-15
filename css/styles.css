@@ -491,6 +491,200 @@ body{
 }
 /* ===========================/COURSES STYLES=========================== */
 
+/* ===========================BENEFITS STYLES=========================== */
+.benefits-section{
+    padding-top: 180px;
+    padding-bottom: 120px;
+    background-color: var(--white-text-color);
+}
+.benefits-subtitle{
+    margin-bottom: 8px;
+
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+}
+.benefits-title{
+    margin-bottom: 60px;
+
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.3;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+.benefits-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.benefits-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 307px;
+    height: 46px;
+    background-color: transparent;
+    border-radius: 4px;
+
+    font-size: 16px;
+    line-height: 1.6;
+    color:#9A9CA5;
+    border: 1px solid var(--white-text-color);
+
+    transition: border-color var(--transition-dur-and-func);
+}
+.benefits-button .benefits-icon{
+    fill:#9A9CA5;
+}
+.benefits-button:hover,
+.benefits-button:focus{
+    border-color: #9A9CA5;
+}
+.benefits-button.active{
+    border: 1px solid #FF3F3A;
+    color: #FF3F3A;
+}
+.benefits-button.active .benefits-icon{
+    fill: var(--primary-color);
+}
+.benefits-bottom-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.benefits-bottom-title{
+    margin-bottom: 24px;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.3;
+    color: var(--secondary-text-color);
+}
+.benefits-bottom-text{
+    max-width: 495px;
+    font-weight: 400;
+}
+/* ===========================/BENEFITS STYLES=========================== */
+
+/* ===========================EVENTS STYLES=========================== */
+.events-section{
+    overflow: hidden;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.bg-6{
+    position: absolute;
+    top: -133px;
+    right: -60px;
+}
+.bg-7{
+    position: absolute;
+    bottom: 7px;
+    left: 10px;
+}
+.events-subtitle{
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+.events-title{
+    margin-bottom: 60px;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.3;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+.events-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 60px;
+}
+.events-item{
+    display: flex;
+    align-items: center;
+    padding: 32px 40px;
+    width: 1230px;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+.left-events-wrapper{
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+}
+.events-left-side-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.events-date{
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+}
+.events-month{
+    margin-bottom: 4px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--secondary-text-color);
+}
+.events-time{
+    font-weight: 400;
+    font-size: 16px;
+    color: #787A80;
+}
+.events-description-title{
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--secondary-text-color);
+}
+.events-description-subtitle{
+    font-weight: 400;
+    font-size: 16px;
+    color: #787A80;
+}
+.events-button{
+    margin-left: auto;
+    width: 136px;
+    height: 44px;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 3.14;
+}
+.events-bottom-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.events-bottom-title{
+    font-size: 28px;
+    line-height: 1.5;
+    color: var(--secondary-text-color);
+}
+.events-bottom-button{
+    width: 214px;
+    height: 52px;
+}
+/* ===========================/EVENTS STYLES=========================== */
+
 /* ===========================FOOTER STYLES=========================== */
 .footer{
     background-color: var(--secondary-text-color);
