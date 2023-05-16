@@ -59,6 +59,7 @@ body{
 .current{
     color: var(--text-accent-color);
 }
+
 .container{
     width: 1260px;
     padding-left: 15px;
@@ -94,6 +95,7 @@ body{
     line-height: 3.25;
     letter-spacing: 0.5px;
     color: var(--text-accent-color);
+    background-color: transparent;
     text-align: center;
     scale:1;
     transition: color var(--transition-dur-and-func), border-color var(--transition-dur-and-func), background-image var(--transition-dur-and-func), scale var(--transition-dur-and-func);
@@ -137,14 +139,12 @@ body{
     margin-right: 20px;
 }
 .menu-link{
-    transition: color var(--transition-dur-and-func), scale var(--transition-dur-and-func);
+    transition: color var(--transition-dur-and-func);
     padding: 6px;
-    scale:1;
 }
 .menu-link:hover,
 .menu-link:focus{
-    color: var(--primary-color);
-    scale:1.1;
+    color: var(--text-accent-color);
 }
 .consultation-btn{
     animation: shake-horizontal 8s cubic-bezier(0.455, 0.030, 0.515, 0.955) 6s infinite;
@@ -684,6 +684,67 @@ body{
     height: 52px;
 }
 /* ===========================/EVENTS STYLES=========================== */
+
+/* ===========================HERO STYLES=========================== */
+.hero-section{
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 180px;
+}
+.bg-8{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.bg-9{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.hero-subtitle{
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+}
+.hero-title{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 810px;
+    margin-bottom: 60px;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    text-align: center;
+    color: #1E212C;
+}
+.hero-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.hero-form-input{
+    width: 422px;
+    height: 52px;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 1.6;
+    background: #FFFFFF;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+
+    font-weight: 400;
+    color: #9A9CA5;
+}
+.hero-submit-button{
+    width: 154px;
+    height: 52px;
+}
+/* ===========================/HERO STYLES=========================== */
 
 /* ===========================FOOTER STYLES=========================== */
 .footer{
