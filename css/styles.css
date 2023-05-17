@@ -76,8 +76,8 @@ body{
     line-height: 3.25;
     letter-spacing: 0.5px;
     border: 1px solid transparent;
-    scale:1;
-    transition: color var(--transition-dur-and-func), border-color var(--transition-dur-and-func), background-image var(--transition-dur-and-func), background-color var(--transition-dur-and-func), scale var(--transition-dur-and-func);
+    transform: scale(1);
+    transition: color var(--transition-dur-and-func), border-color var(--transition-dur-and-func), background-image var(--transition-dur-and-func), background-color var(--transition-dur-and-func), transform var(--transition-dur-and-func);
 }
 .button-fill:hover,
 .button-fill:focus{
@@ -85,7 +85,7 @@ body{
     background-image: none;
     background-color: rgba(0, 0, 0, 0);
     color: var(--text-accent-color);
-    scale: 0.95;
+    transform:scale(0.95);
 }
 .button-blank{
     width: 148px;
@@ -97,15 +97,15 @@ body{
     color: var(--text-accent-color);
     background-color: transparent;
     text-align: center;
-    scale:1;
-    transition: color var(--transition-dur-and-func), border-color var(--transition-dur-and-func), background-image var(--transition-dur-and-func), scale var(--transition-dur-and-func);
+    transform: scale(1);
+    transition: color var(--transition-dur-and-func), border-color var(--transition-dur-and-func), background-image var(--transition-dur-and-func), transform var(--transition-dur-and-func);
 }
 .button-blank:hover,
 .button-blank:focus{
     border-color: transparent;
     background-image: var(--bg-accent-color);
     color: var(--white-text-color);
-    scale:0.95;
+    transform: scale(0.95);
 }
 .icon{
     fill: #424551;
@@ -1032,12 +1032,12 @@ body{
     letter-spacing: 0.5px;
     color: #FFFFFF;
 
-    scale: 1;
-    transition: scale var(--transition-dur-and-func);
+    transform: scale(1);
+    transition: transform var(--transition-dur-and-func);
 }
 .modal-submit-btn:hover,
 .modal-submit-btn:focus{
-    scale: 0.98;
+    transform: scale(0.98);
 }
 .modal-registration-text{
     margin-bottom: 24px;
